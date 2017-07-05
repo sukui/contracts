@@ -14,16 +14,6 @@ interface Store
     public function get($key);
 
     /**
-     * Retrieve multiple items from the cache by key.
-     *
-     * Items not found in the cache will have a null value.
-     *
-     * @param  array  $keys
-     * @return array
-     */
-    public function many(array $keys);
-
-    /**
      * Store an item in the cache for a given number of minutes.
      *
      * @param  string  $key
@@ -32,15 +22,6 @@ interface Store
      * @return void
      */
     public function put($key, $value, $ttl);
-
-    /**
-     * Store multiple items in the cache for a given number of minutes.
-     *
-     * @param  array  $values
-     * @param  float|int  $ttl second
-     * @return void
-     */
-    public function putMany(array $values, $ttl);
 
     /**
      * Increment the value of an item in the cache.

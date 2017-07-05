@@ -1,5 +1,5 @@
 {
-  "name": "zanphp/contracts ",
+  "name": "zanphp/contracts",
   "require": {
     "php": ">=5.6"
   },

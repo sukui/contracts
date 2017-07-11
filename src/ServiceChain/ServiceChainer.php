@@ -8,7 +8,7 @@ interface ServiceChainer
     const TYPE_TCP  = 2;
     const TYPE_JOB  = 3;
 
-    public function getKey($type);
+    public function getChainKey($type);
 
     /**
      * get service chain value by type
@@ -16,13 +16,20 @@ interface ServiceChainer
      * @param array $ctx
      * @return mixed
      */
-    public function getValue($type, array $ctx = []);
+    public function getChainValue($type, array $ctx = []);
 
     /**
-     * get endpoint by app-name and service chain key
+     * get endpoint by app-name [and service chain key]
      * @param string $appName
      * @param string $scKey
-     * @return array|null list($host, $port) = getEndpoint()
+     * @return array|null
+     * scKey === null
+     * [
+     *  scKey1 => ["$host:$port" => list($host, $port), ...],
+     *  ...
+     * ]
+     * scKey !== null
+     * ["$host:$port" => list($host, $port), ...],
      */
-    public function getEndpoint($appName, $scKey);
+    public function getEndpoints($appName, $scKey = null);
 }

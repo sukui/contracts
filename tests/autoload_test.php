@@ -3,6 +3,7 @@
 $file = __DIR__ . "/../vendor/autoload.php";
 
 if (!file_exists($file)) {
+    echo "\033[1;31m$file not found\033[0m\n";
     return;
 }
 

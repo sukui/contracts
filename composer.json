@@ -6,7 +6,9 @@
   },
   "autoload": {
     "psr-4": {
-      "ZanPHP\\Contracts\\": "src/"
+      "Zan\\Framework\\Contract\\": "src/Contract",
+      "Zan\\Framework\\Foundation\\": "src/Foundation",
+      "ZanPHP\\Contracts\\": "src"
     }
   },
   "extra": {

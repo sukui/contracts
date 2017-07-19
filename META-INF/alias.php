@@ -32,6 +32,5 @@ return [
 
     \ZanPHP\Contracts\Http\Url::class => "\\Zan\\Framework\\Contract\\Network\\Http\\Url",
 
-    \ZanPHP\Contracts\Hawk\Hawk::class => "\\Zan\\Framework\\Sdk\\Monitor\\Hawk",
     \ZanPHP\Contracts\Hawk\Hawker::class => "\\Zan\\Framework\\Sdk\\Monitor\\Hawker",
 ];

@@ -33,4 +33,10 @@ return [
     \ZanPHP\Contracts\Http\Url::class => "\\Zan\\Framework\\Contract\\Network\\Http\\Url",
 
     \ZanPHP\Contracts\Hawk\Hawker::class => "\\Zan\\Framework\\Sdk\\Monitor\\Hawker",
+
+    \ZanPHP\Contracts\Database\DbResultInterface::class => "\\Zan\\Framework\\Contract\\Store\\Database\\DbResultInterface",
+    \ZanPHP\Contracts\Database\DriverInterface::class => "\\Zan\\Framework\\Contract\\Store\\Database\\DriverInterface",
+    \ZanPHP\Contracts\Database\ResultFormatterInterface::class => "\\Zan\\Framework\\Contract\\Store\\Database\\ResultFormatterInterface",
+    \ZanPHP\Contracts\Database\ResultTypeInterface::class => "\\Zan\\Framework\\Contract\\Store\\Database\\ResultTypeInterface",
+
 ];

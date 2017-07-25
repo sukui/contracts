@@ -11,7 +11,7 @@ interface ConnectionFactory
     public function __construct(array $config);
 
     /**
-     * @return \Zan\Framework\Contract\Network\Connection
+     * @return \ZanPHP\ConnectionPool\Driver\Base
      */
     public function create();
 

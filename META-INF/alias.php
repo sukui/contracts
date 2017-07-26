@@ -39,4 +39,5 @@ return [
     \ZanPHP\Contracts\Database\ResultFormatterInterface::class => "\\Zan\\Framework\\Contract\\Store\\Database\\ResultFormatterInterface",
     \ZanPHP\Contracts\Database\ResultTypeInterface::class => "\\Zan\\Framework\\Contract\\Store\\Database\\ResultTypeInterface",
 
+    \ZanPHP\Contracts\Trace\Constant::class => "\\Zan\\Framework\\Sdk\\Trace\\Constant",
 ];

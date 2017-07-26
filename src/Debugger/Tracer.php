@@ -1,6 +1,6 @@
 <?php
 
-namespace ZanPHP\Debugger;
+namespace ZanPHP\Contracts\Debugger;
 
 
 interface Tracer

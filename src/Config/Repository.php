@@ -1,6 +1,5 @@
 <?php
 
-
 namespace ZanPHP\Contracts\Config;
 
 interface Repository

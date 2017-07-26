@@ -13,6 +13,8 @@ interface Tracer
      */
     public function parseTraceURI(array $ctx);
 
+    public function getKey();
+
     public function beginRequest($type, $name, $req);
 
     public function endRequest($exception = null);

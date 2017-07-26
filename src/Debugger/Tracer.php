@@ -1,9 +1,12 @@
 <?php
 
-namespace ZanPHP\Contracts\DebuggerTrace;
+namespace ZanPHP\Debugger;
 
-interface DebuggerTrace
+
+interface Tracer
 {
+    public function getKey();
+
     public function beginTransaction($traceType, $name, $req);
 
     public function commit($logType, $res = []);

@@ -5,7 +5,17 @@ namespace ZanPHP\Codec;
 
 interface Codec
 {
-    public function encode(...$args);
+    /**
+     * @param PDU $pdu
+     * @return string
+     * @throws \ZanPHP\Exception\Codec\CodecException
+     */
+    public function encode(PDU $pdu);
 
-    public function decode($byteBuffer);
+    /**
+     * @param string $bytesBuffer
+     * @return PDU
+     * @throws \ZanPHP\Exception\Codec\CodecException
+     */
+    public function decode($bytesBuffer);
 }

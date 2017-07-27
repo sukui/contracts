@@ -1,6 +1,6 @@
 <?php
 
-namespace ZanPHP\Codec;
+namespace ZanPHP\Contracts\Codec;
 
 
 interface Codec

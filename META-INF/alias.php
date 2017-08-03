@@ -20,6 +20,7 @@ return [
     \ZanPHP\Contracts\Support\Htmlable::class => "\\Zan\\Framework\\Contract\\Foundation\\Htmlable",
 
 
+    \ZanPHP\Contracts\ConnectionPool\Base::class => "\\Zan\\Framework\\Network\\Connection\\Driver\\Base",
     \ZanPHP\Contracts\ConnectionPool\Connection::class => "\\Zan\\Framework\\Contract\\Network\\Connection",
     \ZanPHP\Contracts\ConnectionPool\ConnectionFactory::class => "\\Zan\\Framework\\Contract\\Network\\ConnectionFactory",
     \ZanPHP\Contracts\ConnectionPool\ConnectionPool::class => "\\Zan\\Framework\\Contract\\Network\\ConnectionPool",
@@ -41,5 +42,5 @@ return [
 
     \ZanPHP\Contracts\Trace\Constant::class => "\\Zan\\Framework\\Sdk\\Trace\\Constant",
 
-    \ZanPHP\Contracts\Http\ResponseTrait::class => "Zan\\Framework\\Network\\Http\\Response\\ResponseTrait",
+    \ZanPHP\Contracts\Http\ResponseTrait::class => "\\Zan\\Framework\\Network\\Http\\Response\\ResponseTrait",
 ];

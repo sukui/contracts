@@ -40,9 +40,6 @@ abstract class Base implements Connection
         return $this->config;
     }
 
-    /**
-     * @return ConnectionFactory
-     */
     public function getSocket()
     {
         return $this->socket;

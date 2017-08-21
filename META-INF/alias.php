@@ -43,4 +43,8 @@ return [
     \ZanPHP\Contracts\Trace\Constant::class => "\\Zan\\Framework\\Sdk\\Trace\\Constant",
 
     \ZanPHP\Contracts\Http\ResponseTrait::class => "\\Zan\\Framework\\Network\\Http\\Response\\ResponseTrait",
+
+    \ZanPHP\Contracts\Pagelet\ComponentInterface::class => "\\Zan\\Framework\\Foundation\\Pagelet\\Contracts\\ComponentInterface",
+    \ZanPHP\Contracts\Pagelet\ComponentOutputInterface::class => "\\Zan\\Framework\\Foundation\\Pagelet\\Contracts\\ComponentInterface",
+    \ZanPHP\Contracts\Pagelet\ManagementInterface::class => "\\Zan\\Framework\\Foundation\\Pagelet\\Contracts\\ManagementInterface",
 ];

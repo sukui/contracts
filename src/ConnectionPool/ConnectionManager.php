@@ -4,5 +4,5 @@ namespace ZanPHP\Contracts\ConnectionPool;
 
 interface ConnectionManager
 {
-    public function get($connKey);
+    public function get($connKey, $wait = true);
 }

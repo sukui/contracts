@@ -14,8 +14,9 @@ interface Codec
 
     /**
      * @param string $bytesBuffer
+     * @param mixed $ctx
      * @return PDU
      * @throws \ZanPHP\Exception\Codec\CodecException
      */
-    public function decode($bytesBuffer);
+    public function decode($bytesBuffer, $ctx = null);
 }

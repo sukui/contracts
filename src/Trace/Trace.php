@@ -25,6 +25,12 @@ interface Trace
 
     public function logEvent($type, $status, $name = "", $context = "");
 
+    public function logError($type, $name , \Exception $error);
+
+    public function logMetricForCount($name, $quantity = 1);
+
+    public function logMetricForSum($name, $value = 1.0);
+
     public function setRemoteCallMsgId($remoteCallMsgId);
 
     public function getRemoteCallMsgId();

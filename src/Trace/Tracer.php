@@ -19,6 +19,15 @@ abstract class Tracer
     //Event	用来记录一件事发生的次数，比如记录系统异常，它和transaction相比缺少了时间的统计，开销比transaction要小。
     abstract public function logEvent($type, $status, $name = "", $context = "");
 
+    //Error 等同Event
+    abstract public function logError($type, $name , \Exception $error);
+
+    //Metric业务总数记录
+    abstract public function logMetricForCount($name, $quantity = 1);
+
+    //Metric业务总额记录
+    abstract public function logMetricForSum($name, $value = 1.0);
+
     //上报Trace数据,可实现为协程或函数,非阻塞
     abstract public function uploadTraceData();
 

@@ -4,7 +4,25 @@ namespace ZanPHP\Contracts\Session;
 
 interface Storable
 {
+    /**
+     * @return string
+     */
+    public function generateId();
+
+    /**
+     * @param $key
+     * @return array
+     */
     public function get($key);
-    public function set($key, $value);
+    /**
+     * @param $key
+     * @param array $value
+     * @return mixed
+     */
+    public function set($key, array $value);
+    /**
+     * @param $key
+     * @return boolean
+     */
     public function del($key);
 }

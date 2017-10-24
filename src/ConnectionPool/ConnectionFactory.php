@@ -17,4 +17,5 @@ interface ConnectionFactory
 
     public function close();
 
+    public function getFactoryType();
 }
